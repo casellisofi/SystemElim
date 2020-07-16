@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e49b5455f894b5ba6add6d103b6364e" Name="Diagram1">
+        <EntityTypeShape EntityType="BDSystemElimModel.Cede" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="BDSystemElimModel.EscuelaDeVida" Width="1.5" PointX="5" PointY="9" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Rol" Width="1.5" PointX="7.75" PointY="1.125" />
+        <EntityTypeShape EntityType="BDSystemElimModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Usuario" Width="1.5" PointX="10" PointY="0.875" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Usuario_Rol" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Bautizados" Width="1.5" PointX="0.875" PointY="1.875" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Celula" Width="1.5" PointX="10.625" PointY="3.75" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Celula_Cede" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Red" Width="1.5" PointX="8.25" PointY="15.375" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Celula_Red" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Reporte" Width="1.5" PointX="12.75" PointY="10.125" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Reporte_Celula" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Reporte_Red" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Lideres" Width="1.5" PointX="4.25" PointY="11.375" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Persona" Width="1.5" PointX="7" PointY="3" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Persona_Bautizados" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Cede_Auxiliar" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Cede_Lider" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Persona_Cede" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Celula_Persona" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Celula_Persona1" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Persona_Celula" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Persona_EscuelaDeVida" />
+        <AssociationConnector Association="BDSystemElimModel.FK_LiderDePersona" />
+        <AssociationConnector Association="BDSystemElimModel.FK_PersonaQueEsLider" />
+        <EntityTypeShape EntityType="BDSystemElimModel.Area" Width="1.5" PointX="13.25" PointY="4.875" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Area_Auxiliar" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Area_Cede" />
+        <AssociationConnector Association="BDSystemElimModel.FK_Area_Lider" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

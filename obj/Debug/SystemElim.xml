@@ -1,0 +1,726 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SystemElim
+</name>
+</assembly>
+<members>
+<member name="T:SystemElim.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._14408_line_font_black_fabric_texture_textile_black_and_white_1680x1050">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._14408_line_font_black_fabric_texture_textile_black_and_white_1680x10501">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._14408_line_font_black_fabric_texture_textile_black_and_white_1680x105011">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._2019_06_23__2_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._2019_06_23__2_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._2019_06_23__2_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources._747469">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.b">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.cerrar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.descarga">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.descarga__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.descarga__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.descarga1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.fondo_negro_abstracto_sombra_doblez_tecnologia_1408_563">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.Grey_Abstract_Wallpaper_04_1920x1200_340x220">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.Lines_Dark_Background_Wallpaper_2560x1600_340x220">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.NypnzFX">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SystemElim.My.Resources.Resources.Sin_título">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.AreaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.BautizadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CedeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CelulaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.EscuelaDeVidaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.LiderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.PersonaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.RolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.UsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.AreaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.BautizadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CedeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CelulaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.EscuelaDeVidaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.LiderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.PersonaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.RolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.UsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.AreaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.BautizadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CedeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.CelulaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.EscuelaDeVidaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.LiderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.PersonaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.RolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSet.UsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.AreaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.BautizadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.CedeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.CelulaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.EscuelaDeVidaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.LiderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.PersonaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.RolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.UsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SystemElim.BDSystemElimDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SystemElim.BDSystemElimDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SystemElim.BDSystemElimDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.UpdateAll(SystemElim.BDSystemElimDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SystemElim.BDSystemElimDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SystemElim.Datos">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ReporteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoTotalReporteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorRedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorCelulaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorFechaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorCedeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorBautizDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorEscuelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorLiderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorCedeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorLiderDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorBautDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorEscuelaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasPorCedeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ReporteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoTotalReporteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorRedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorCelulaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorFechaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorCedeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorBautizRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorEscuelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorLiderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorCedeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorLiderRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorBautRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorEscuelaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasPorCedeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ReporteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoTotalReporteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorRedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorCelulaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.ListadoPorFechaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorCedeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorBautizRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorEscuelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.PersonasPorLiderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorCedeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorLiderRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorBautRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.CelulasPorEscuelaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.Datos.AreasPorCedeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.PersonasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.ReporteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.ListadoTotalReporteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.ListadoPorRedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.ListadoPorCelulaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.ListadoPorFechaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.PersonasPorCedeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.PersonasPorBautizTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.PersonasPorEscuelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.PersonasPorLiderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.CelulasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.CelulasPorCedeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.CelulasPorLiderTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.CelulasPorBautTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.CelulasPorEscuelaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.AreasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.AreasPorCedeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SystemElim.DatosTableAdapters.TableAdapterManager.UpdateUpdatedRows(SystemElim.Datos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SystemElim.DatosTableAdapters.TableAdapterManager.UpdateInsertedRows(SystemElim.Datos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SystemElim.DatosTableAdapters.TableAdapterManager.UpdateDeletedRows(SystemElim.Datos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SystemElim.DatosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SystemElim.DatosTableAdapters.TableAdapterManager.UpdateAll(SystemElim.Datos)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SystemElim.DatosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

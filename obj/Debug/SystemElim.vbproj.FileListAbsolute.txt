@@ -1,0 +1,155 @@
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\bin\Debug\SystemElim.exe.config
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\bin\Debug\SystemElim.exe
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\bin\Debug\SystemElim.pdb
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\bin\Debug\SystemElim.xml
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.vbprojAssemblyReference.cache
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.Administración.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.AgregarArea.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.AgregarCelula.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.AgregarPersona.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.Resources.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.vbproj.GenerateResource.cache
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.vbproj.CoreCompileInputs.cache
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.exe
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.xml
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.pdb
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.Modificar_Area.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.ModificarCelula.resources
+C:\Users\Pistis Sophía\AppData\Local\Temporary Projects\SystemElim\obj\Debug\SystemElim.ModificarPersona.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\bin\Debug\SystemElim.exe.config
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\bin\Debug\SystemElim.exe
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\bin\Debug\SystemElim.pdb
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\bin\Debug\SystemElim.xml
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.vbprojAssemblyReference.cache
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.Administración.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarArea.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.Modificar_Area.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarCelula.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.ModificarCelula.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarPersona.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.ModificarPersona.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.Resources.resources
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.vbproj.GenerateResource.cache
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.vbproj.CoreCompileInputs.cache
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.exe
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.xml
+C:\Users\Pistis Sophía\source\repos\SystemElim\SystemElim\obj\Debug\SystemElim.pdb
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.exe
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.xml
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.pdb
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.vbprojAssemblyReference.cache
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarArea.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.Modificar_Area.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarCelula.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ModificarCelula.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarPersona.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ModificarPersona.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ElimJoven.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AllElim.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.Resources.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.vbproj.GenerateResource.cache
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.vbproj.CoreCompileInputs.cache
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.Administracion.resources
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SystemElim.exe.config
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SystemElim.exe
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SystemElim.pdb
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SystemElim.xml
+D:\Sofía\SystemElim\SystemElim\bin\Debug\EntityFramework.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\EntityFramework.SqlServer.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\EntityFramework.xml
+D:\Sofía\SystemElim\SystemElim\bin\Debug\EntityFramework.SqlServer.xml
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.vbproj.CopyComplete
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.BajaArea.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.BajaCelula.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.BajaPersonas.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarLider.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoDeAreas.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoDeCelulas.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoDePersonas.resources
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\EnvDTE.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\stdole.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\Microsoft.MSXML.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.Cantidades.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CantPersona.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CantBautizados.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CantCelulas.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CantEscuela.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AgregarRed.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ReporteCelula.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.Reporte.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\RdlCompile.cache
+D:\Sofía\SystemElim\SystemElim\obj\Debug\RdlCompile.compiled
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoReportes.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoTotalReporte.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoPorRed.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoPorCelula.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.ListadoPorFecha.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.PersonasPorCede.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.PersonasPorLider.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.PersonasPorBautiz.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.PersonasPorEscuela.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulaTotal.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulasTotal.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulasPorBautizados.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulasPorCede.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulasPorLider.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CelulasPorEscuela.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AreasTotal.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.AreasPorCede.resources
+D:\Sofía\SystemElim\SystemElim\obj\Debug\SystemElim.CantidadCelulas.resources

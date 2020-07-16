@@ -1,0 +1,1140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BDSystemElimModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="id_area" />
+          </Key>
+          <Property Name="id_area" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="lider" Type="int" />
+          <Property Name="auxiliar" Type="int" />
+          <Property Name="cede_id" Type="int" />
+          <Property Name="estado" Type="int" />
+          <Property Name="descripcion" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Bautizados">
+          <Key>
+            <PropertyRef Name="id_bautizado" />
+          </Key>
+          <Property Name="id_bautizado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="estado" Type="varchar" MaxLength="50" />
+          <Property Name="iglesia" Type="varchar" MaxLength="50" />
+          <Property Name="lugar" Type="varchar" MaxLength="50" />
+          <Property Name="año" Type="int" />
+        </EntityType>
+        <EntityType Name="Cede">
+          <Key>
+            <PropertyRef Name="id_cede" />
+          </Key>
+          <Property Name="id_cede" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="lider" Type="int" />
+          <Property Name="auxiliar" Type="int" />
+          <Property Name="mesInicio" Type="varchar" MaxLength="50" />
+          <Property Name="añoInicio" Type="int" />
+          <Property Name="estado" Type="int" />
+        </EntityType>
+        <EntityType Name="Celula">
+          <Key>
+            <PropertyRef Name="id_celula" />
+          </Key>
+          <Property Name="id_celula" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="lider" Type="int" />
+          <Property Name="auxiliar" Type="int" />
+          <Property Name="direccion" Type="varchar" MaxLength="50" />
+          <Property Name="horario" Type="varchar" MaxLength="50" />
+          <Property Name="dirigido" Type="varchar" MaxLength="50" />
+          <Property Name="mesInicio" Type="varchar" MaxLength="50" />
+          <Property Name="añoInicio" Type="int" />
+          <Property Name="estado" Type="int" />
+          <Property Name="cede_id" Type="int" />
+          <Property Name="sexo" Type="varchar" MaxLength="50" />
+          <Property Name="red_id" Type="int" />
+        </EntityType>
+        <EntityType Name="EscuelaDeVida">
+          <Key>
+            <PropertyRef Name="id_escuela" />
+          </Key>
+          <Property Name="id_escuela" Type="int" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Lideres">
+          <Key>
+            <PropertyRef Name="id_lider" />
+          </Key>
+          <Property Name="id_lider" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="persona_id" Type="int" />
+          <Property Name="estado" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="celulalider" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="id_persona" />
+          </Key>
+          <Property Name="id_persona" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="apellido" Type="varchar" MaxLength="50" />
+          <Property Name="fecha_nac" Type="date" />
+          <Property Name="lugar_nac" Type="varchar" MaxLength="50" />
+          <Property Name="profesion" Type="varchar" MaxLength="50" />
+          <Property Name="sexo" Type="varchar" MaxLength="50" />
+          <Property Name="direccion" Type="varchar" MaxLength="50" />
+          <Property Name="barrio" Type="varchar" MaxLength="50" />
+          <Property Name="telefono" Type="varchar" MaxLength="50" />
+          <Property Name="cede_id" Type="int" />
+          <Property Name="celula_id" Type="int" />
+          <Property Name="lider_id" Type="int" />
+          <Property Name="escuela_id" Type="int" />
+          <Property Name="bautizado_id" Type="int" />
+          <Property Name="estado" Type="int" />
+          <Property Name="fechaactual" Type="date" />
+          <Property Name="edad" Type="int" />
+        </EntityType>
+        <EntityType Name="Red">
+          <Key>
+            <PropertyRef Name="id_red" />
+          </Key>
+          <Property Name="id_red" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="estado" Type="int" />
+        </EntityType>
+        <EntityType Name="Reporte">
+          <Key>
+            <PropertyRef Name="id_reporte" />
+          </Key>
+          <Property Name="id_reporte" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="red_id" Type="int" />
+          <Property Name="celula_id" Type="int" />
+          <Property Name="lider" Type="varchar" MaxLength="50" />
+          <Property Name="aux" Type="varchar" MaxLength="50" />
+          <Property Name="domicilio" Type="varchar" MaxLength="50" />
+          <Property Name="fecha" Type="date" />
+          <Property Name="dia" Type="varchar" MaxLength="50" />
+          <Property Name="hora" Type="varchar" MaxLength="50" />
+          <Property Name="leccion" Type="varchar" MaxLength="50" />
+          <Property Name="miembros_pres" Type="varchar(max)" />
+          <Property Name="visitantes" Type="varchar(max)" />
+          <Property Name="total_pres" Type="varchar(max)" />
+          <Property Name="discipulados" Type="varchar(max)" />
+          <Property Name="bautizados" Type="varchar(max)" />
+          <Property Name="almasganadas" Type="varchar(max)" />
+          <Property Name="miembros_ausent" Type="varchar(max)" />
+          <Property Name="observacion" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="id_rol" />
+          </Key>
+          <Property Name="id_rol" Type="int" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" />
+          <Property Name="contraseña" Type="varchar" MaxLength="50" />
+          <Property Name="rol_id" Type="int" />
+        </EntityType>
+        <Association Name="FK_Area_Auxiliar">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Area" Type="Self.Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Area_Cede">
+          <End Role="Cede" Type="Self.Cede" Multiplicity="0..1" />
+          <End Role="Area" Type="Self.Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Area_Lider">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Area" Type="Self.Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cede_Auxiliar">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Cede" Type="Self.Cede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Cede">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cede_Lider">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Cede" Type="Self.Cede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Cede">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Cede">
+          <End Role="Cede" Type="Self.Cede" Multiplicity="0..1" />
+          <End Role="Celula" Type="Self.Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Persona">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Celula" Type="Self.Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Persona1">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Celula" Type="Self.Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Red">
+          <End Role="Red" Type="Self.Red" Multiplicity="0..1" />
+          <End Role="Celula" Type="Self.Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Red">
+              <PropertyRef Name="id_red" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="red_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LiderDePersona">
+          <End Role="Lideres" Type="Self.Lideres" Multiplicity="0..1" />
+          <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lideres">
+              <PropertyRef Name="id_lider" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="lider_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_Bautizados">
+          <End Role="Bautizados" Type="Self.Bautizados" Multiplicity="0..1" />
+          <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bautizados">
+              <PropertyRef Name="id_bautizado" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="bautizado_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_Cede">
+          <End Role="Cede" Type="Self.Cede" Multiplicity="0..1" />
+          <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_Celula">
+          <End Role="Celula" Type="Self.Celula" Multiplicity="0..1" />
+          <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Celula">
+              <PropertyRef Name="id_celula" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="celula_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_EscuelaDeVida">
+          <End Role="EscuelaDeVida" Type="Self.EscuelaDeVida" Multiplicity="0..1" />
+          <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EscuelaDeVida">
+              <PropertyRef Name="id_escuela" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="escuela_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonaQueEsLider">
+          <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+          <End Role="Lideres" Type="Self.Lideres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Lideres">
+              <PropertyRef Name="persona_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reporte_Celula">
+          <End Role="Celula" Type="Self.Celula" Multiplicity="0..1" />
+          <End Role="Reporte" Type="Self.Reporte" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Celula">
+              <PropertyRef Name="id_celula" />
+            </Principal>
+            <Dependent Role="Reporte">
+              <PropertyRef Name="celula_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reporte_Red">
+          <End Role="Red" Type="Self.Red" Multiplicity="0..1" />
+          <End Role="Reporte" Type="Self.Reporte" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Red">
+              <PropertyRef Name="id_red" />
+            </Principal>
+            <Dependent Role="Reporte">
+              <PropertyRef Name="red_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuario_Rol">
+          <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="id_rol" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="rol_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDSystemElimModelStoreContainer">
+          <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Bautizados" EntityType="Self.Bautizados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cede" EntityType="Self.Cede" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Celula" EntityType="Self.Celula" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EscuelaDeVida" EntityType="Self.EscuelaDeVida" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lideres" EntityType="Self.Lideres" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Red" EntityType="Self.Red" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reporte" EntityType="Self.Reporte" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Area_Auxiliar" Association="Self.FK_Area_Auxiliar">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Area_Cede" Association="Self.FK_Area_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Area_Lider" Association="Self.FK_Area_Lider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cede_Auxiliar" Association="Self.FK_Cede_Auxiliar">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Cede" EntitySet="Cede" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cede_Lider" Association="Self.FK_Cede_Lider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Cede" EntitySet="Cede" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Cede" Association="Self.FK_Celula_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Persona" Association="Self.FK_Celula_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Persona1" Association="Self.FK_Celula_Persona1">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Red" Association="Self.FK_Celula_Red">
+            <End Role="Red" EntitySet="Red" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LiderDePersona" Association="Self.FK_LiderDePersona">
+            <End Role="Lideres" EntitySet="Lideres" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_Bautizados" Association="Self.FK_Persona_Bautizados">
+            <End Role="Bautizados" EntitySet="Bautizados" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_Cede" Association="Self.FK_Persona_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_Celula" Association="Self.FK_Persona_Celula">
+            <End Role="Celula" EntitySet="Celula" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_EscuelaDeVida" Association="Self.FK_Persona_EscuelaDeVida">
+            <End Role="EscuelaDeVida" EntitySet="EscuelaDeVida" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonaQueEsLider" Association="Self.FK_PersonaQueEsLider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Lideres" EntitySet="Lideres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reporte_Celula" Association="Self.FK_Reporte_Celula">
+            <End Role="Celula" EntitySet="Celula" />
+            <End Role="Reporte" EntitySet="Reporte" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reporte_Red" Association="Self.FK_Reporte_Red">
+            <End Role="Red" EntitySet="Red" />
+            <End Role="Reporte" EntitySet="Reporte" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuario_Rol" Association="Self.FK_Usuario_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BDSystemElimModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BDSystemElimEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cede" EntityType="BDSystemElimModel.Cede" />
+          <EntitySet Name="EscuelaDeVida" EntityType="BDSystemElimModel.EscuelaDeVida" />
+          <EntitySet Name="Rol" EntityType="BDSystemElimModel.Rol" />
+          <EntitySet Name="sysdiagrams" EntityType="BDSystemElimModel.sysdiagrams" />
+          <EntitySet Name="Usuario" EntityType="BDSystemElimModel.Usuario" />
+          <AssociationSet Name="FK_Usuario_Rol" Association="BDSystemElimModel.FK_Usuario_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+          <EntitySet Name="Bautizados" EntityType="BDSystemElimModel.Bautizados" />
+          <EntitySet Name="Celula" EntityType="BDSystemElimModel.Celula" />
+          <AssociationSet Name="FK_Celula_Cede" Association="BDSystemElimModel.FK_Celula_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <EntitySet Name="Red" EntityType="BDSystemElimModel.Red" />
+          <AssociationSet Name="FK_Celula_Red" Association="BDSystemElimModel.FK_Celula_Red">
+            <End Role="Red" EntitySet="Red" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <EntitySet Name="Reporte" EntityType="BDSystemElimModel.Reporte" />
+          <AssociationSet Name="FK_Reporte_Celula" Association="BDSystemElimModel.FK_Reporte_Celula">
+            <End Role="Celula" EntitySet="Celula" />
+            <End Role="Reporte" EntitySet="Reporte" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reporte_Red" Association="BDSystemElimModel.FK_Reporte_Red">
+            <End Role="Red" EntitySet="Red" />
+            <End Role="Reporte" EntitySet="Reporte" />
+          </AssociationSet>
+          <EntitySet Name="Lideres" EntityType="BDSystemElimModel.Lideres" />
+          <EntitySet Name="Persona" EntityType="BDSystemElimModel.Persona" />
+          <AssociationSet Name="FK_Persona_Bautizados" Association="BDSystemElimModel.FK_Persona_Bautizados">
+            <End Role="Bautizados" EntitySet="Bautizados" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cede_Auxiliar" Association="BDSystemElimModel.FK_Cede_Auxiliar">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Cede" EntitySet="Cede" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cede_Lider" Association="BDSystemElimModel.FK_Cede_Lider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Cede" EntitySet="Cede" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_Cede" Association="BDSystemElimModel.FK_Persona_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Persona" Association="BDSystemElimModel.FK_Celula_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Celula_Persona1" Association="BDSystemElimModel.FK_Celula_Persona1">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Celula" EntitySet="Celula" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_Celula" Association="BDSystemElimModel.FK_Persona_Celula">
+            <End Role="Celula" EntitySet="Celula" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Persona_EscuelaDeVida" Association="BDSystemElimModel.FK_Persona_EscuelaDeVida">
+            <End Role="EscuelaDeVida" EntitySet="EscuelaDeVida" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LiderDePersona" Association="BDSystemElimModel.FK_LiderDePersona">
+            <End Role="Lideres" EntitySet="Lideres" />
+            <End Role="Persona" EntitySet="Persona" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonaQueEsLider" Association="BDSystemElimModel.FK_PersonaQueEsLider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Lideres" EntitySet="Lideres" />
+          </AssociationSet>
+          <EntitySet Name="Area" EntityType="BDSystemElimModel.Area" />
+          <AssociationSet Name="FK_Area_Auxiliar" Association="BDSystemElimModel.FK_Area_Auxiliar">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Area_Cede" Association="BDSystemElimModel.FK_Area_Cede">
+            <End Role="Cede" EntitySet="Cede" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Area_Lider" Association="BDSystemElimModel.FK_Area_Lider">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Area" EntitySet="Area" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Cede">
+          <Key>
+            <PropertyRef Name="id_cede" />
+          </Key>
+          <Property Name="id_cede" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lider" Type="Int32" />
+          <Property Name="auxiliar" Type="Int32" />
+          <Property Name="mesInicio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="añoInicio" Type="Int32" />
+          <Property Name="estado" Type="Int32" />
+          <NavigationProperty Name="CededeCelula" Relationship="BDSystemElimModel.FK_Celula_Cede" FromRole="Cede" ToRole="Celula" />
+          <NavigationProperty Name="AuxiliarCede" Relationship="BDSystemElimModel.FK_Cede_Auxiliar" FromRole="Cede" ToRole="Persona" />
+          <NavigationProperty Name="LiderCede" Relationship="BDSystemElimModel.FK_Cede_Lider" FromRole="Cede" ToRole="Persona" />
+          <NavigationProperty Name="CedeDePersona" Relationship="BDSystemElimModel.FK_Persona_Cede" FromRole="Cede" ToRole="Persona" />
+          <NavigationProperty Name="Area" Relationship="BDSystemElimModel.FK_Area_Cede" FromRole="Cede" ToRole="Area" />
+          </EntityType>
+        <EntityType Name="EscuelaDeVida">
+          <Key>
+            <PropertyRef Name="id_escuela" />
+          </Key>
+          <Property Name="id_escuela" Type="Int32" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Persona" Relationship="BDSystemElimModel.FK_Persona_EscuelaDeVida" FromRole="EscuelaDeVida" ToRole="Persona" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="id_rol" />
+          </Key>
+          <Property Name="id_rol" Type="Int32" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Usuario" Relationship="BDSystemElimModel.FK_Usuario_Rol" FromRole="Rol" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rol_id" Type="Int32" />
+          <NavigationProperty Name="Rol" Relationship="BDSystemElimModel.FK_Usuario_Rol" FromRole="Usuario" ToRole="Rol" />
+        </EntityType>
+        <Association Name="FK_Usuario_Rol">
+          <End Type="BDSystemElimModel.Rol" Role="Rol" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="id_rol" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="rol_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Bautizados">
+          <Key>
+            <PropertyRef Name="id_bautizado" />
+          </Key>
+          <Property Name="id_bautizado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="iglesia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lugar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="año" Type="Int32" />
+          <NavigationProperty Name="Persona" Relationship="BDSystemElimModel.FK_Persona_Bautizados" FromRole="Bautizados" ToRole="Persona" />
+        </EntityType>
+        <EntityType Name="Celula">
+          <Key>
+            <PropertyRef Name="id_celula" />
+          </Key>
+          <Property Name="id_celula" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lider" Type="Int32" />
+          <Property Name="auxiliar" Type="Int32" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="horario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="dirigido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mesInicio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="añoInicio" Type="Int32" />
+          <Property Name="estado" Type="Int32" />
+          <Property Name="cede_id" Type="Int32" />
+          <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CededeCelula" Relationship="BDSystemElimModel.FK_Celula_Cede" FromRole="Celula" ToRole="Cede" />
+          <Property Name="red_id" Type="Int32" />
+          <NavigationProperty Name="Red" Relationship="BDSystemElimModel.FK_Celula_Red" FromRole="Celula" ToRole="Red" />
+          <NavigationProperty Name="Reporte" Relationship="BDSystemElimModel.FK_Reporte_Celula" FromRole="Celula" ToRole="Reporte" />
+          <NavigationProperty Name="LiderCelula" Relationship="BDSystemElimModel.FK_Celula_Persona" FromRole="Celula" ToRole="Persona" />
+          <NavigationProperty Name="AuxiliarCelula" Relationship="BDSystemElimModel.FK_Celula_Persona1" FromRole="Celula" ToRole="Persona" />
+          <NavigationProperty Name="CelulaDePersona" Relationship="BDSystemElimModel.FK_Persona_Celula" FromRole="Celula" ToRole="Persona" />
+        </EntityType>
+        <Association Name="FK_Celula_Cede">
+          <End Type="BDSystemElimModel.Cede" Role="Cede" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Red">
+          <Key>
+            <PropertyRef Name="id_red" />
+          </Key>
+          <Property Name="id_red" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="estado" Type="Int32" />
+          <NavigationProperty Name="Celula" Relationship="BDSystemElimModel.FK_Celula_Red" FromRole="Red" ToRole="Celula" />
+          <NavigationProperty Name="Reporte" Relationship="BDSystemElimModel.FK_Reporte_Red" FromRole="Red" ToRole="Reporte" />
+        </EntityType>
+        <Association Name="FK_Celula_Red">
+          <End Type="BDSystemElimModel.Red" Role="Red" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Red">
+              <PropertyRef Name="id_red" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="red_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Reporte">
+          <Key>
+            <PropertyRef Name="id_reporte" />
+          </Key>
+          <Property Name="id_reporte" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="red_id" Type="Int32" />
+          <Property Name="celula_id" Type="Int32" />
+          <Property Name="lider" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="aux" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="domicilio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="dia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="hora" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="leccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="miembros_pres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="visitantes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="total_pres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="discipulados" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="bautizados" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="almasganadas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="miembros_ausent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Celula" Relationship="BDSystemElimModel.FK_Reporte_Celula" FromRole="Reporte" ToRole="Celula" />
+          <NavigationProperty Name="Red" Relationship="BDSystemElimModel.FK_Reporte_Red" FromRole="Reporte" ToRole="Red" />
+        </EntityType>
+        <Association Name="FK_Reporte_Celula">
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Reporte" Role="Reporte" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Celula">
+              <PropertyRef Name="id_celula" />
+            </Principal>
+            <Dependent Role="Reporte">
+              <PropertyRef Name="celula_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reporte_Red">
+          <End Type="BDSystemElimModel.Red" Role="Red" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Reporte" Role="Reporte" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Red">
+              <PropertyRef Name="id_red" />
+            </Principal>
+            <Dependent Role="Reporte">
+              <PropertyRef Name="red_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Lideres">
+          <Key>
+            <PropertyRef Name="id_lider" />
+          </Key>
+          <Property Name="id_lider" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="persona_id" Type="Int32" />
+          <Property Name="estado" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="celulalider" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="LiderDePersona" Relationship="BDSystemElimModel.FK_LiderDePersona" FromRole="Lideres" ToRole="Persona" />
+          <NavigationProperty Name="PersonaQueEsLider" Relationship="BDSystemElimModel.FK_PersonaQueEsLider" FromRole="Lideres" ToRole="Persona" />
+          </EntityType>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="id_persona" />
+          </Key>
+          <Property Name="id_persona" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecha_nac" Type="DateTime" Precision="0" />
+          <Property Name="lugar_nac" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="profesion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="barrio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cede_id" Type="Int32" />
+          <Property Name="celula_id" Type="Int32" />
+          <Property Name="lider_id" Type="Int32" />
+          <Property Name="escuela_id" Type="Int32" />
+          <Property Name="bautizado_id" Type="Int32" />
+          <Property Name="estado" Type="Int32" />
+          <Property Name="fechaactual" Type="DateTime" Precision="0" />
+          <Property Name="edad" Type="Int32" />
+          <NavigationProperty Name="Bautizados" Relationship="BDSystemElimModel.FK_Persona_Bautizados" FromRole="Persona" ToRole="Bautizados" />
+          <NavigationProperty Name="AuxiliarCede" Relationship="BDSystemElimModel.FK_Cede_Auxiliar" FromRole="Persona" ToRole="Cede" />
+          <NavigationProperty Name="LiderCede" Relationship="BDSystemElimModel.FK_Cede_Lider" FromRole="Persona" ToRole="Cede" />
+          <NavigationProperty Name="CedeDePersona" Relationship="BDSystemElimModel.FK_Persona_Cede" FromRole="Persona" ToRole="Cede" />
+          <NavigationProperty Name="LiderCelula" Relationship="BDSystemElimModel.FK_Celula_Persona" FromRole="Persona" ToRole="Celula" />
+          <NavigationProperty Name="AuxiliarCelula" Relationship="BDSystemElimModel.FK_Celula_Persona1" FromRole="Persona" ToRole="Celula" />
+          <NavigationProperty Name="CelulaDePersona" Relationship="BDSystemElimModel.FK_Persona_Celula" FromRole="Persona" ToRole="Celula" />
+          <NavigationProperty Name="EscuelaDeVida" Relationship="BDSystemElimModel.FK_Persona_EscuelaDeVida" FromRole="Persona" ToRole="EscuelaDeVida" />
+          <NavigationProperty Name="LiderDePersona" Relationship="BDSystemElimModel.FK_LiderDePersona" FromRole="Persona" ToRole="Lideres" />
+          <NavigationProperty Name="PersonaQueEsLider" Relationship="BDSystemElimModel.FK_PersonaQueEsLider" FromRole="Persona" ToRole="Lideres" />
+          <NavigationProperty Name="AuxiliarArea" Relationship="BDSystemElimModel.FK_Area_Auxiliar" FromRole="Persona" ToRole="Area" />
+          <NavigationProperty Name="LiderArea" Relationship="BDSystemElimModel.FK_Area_Lider" FromRole="Persona" ToRole="Area" />
+        </EntityType>
+        <Association Name="FK_Persona_Bautizados">
+          <End Type="BDSystemElimModel.Bautizados" Role="Bautizados" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bautizados">
+              <PropertyRef Name="id_bautizado" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="bautizado_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cede_Auxiliar">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Cede" Role="Cede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Cede">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cede_Lider">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Cede" Role="Cede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Cede">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_Cede">
+          <End Type="BDSystemElimModel.Cede" Role="Cede" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Persona">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Celula_Persona1">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Celula">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_Celula">
+          <End Type="BDSystemElimModel.Celula" Role="Celula" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Celula">
+              <PropertyRef Name="id_celula" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="celula_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Persona_EscuelaDeVida">
+          <End Type="BDSystemElimModel.EscuelaDeVida" Role="EscuelaDeVida" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EscuelaDeVida">
+              <PropertyRef Name="id_escuela" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="escuela_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LiderDePersona">
+          <End Type="BDSystemElimModel.Lideres" Role="Lideres" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lideres">
+              <PropertyRef Name="id_lider" />
+            </Principal>
+            <Dependent Role="Persona">
+              <PropertyRef Name="lider_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonaQueEsLider">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Lideres" Role="Lideres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Lideres">
+              <PropertyRef Name="persona_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="id_area" />
+          </Key>
+          <Property Name="id_area" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lider" Type="Int32" />
+          <Property Name="auxiliar" Type="Int32" />
+          <Property Name="cede_id" Type="Int32" />
+          <Property Name="estado" Type="Int32" />
+          <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AuxiliarArea" Relationship="BDSystemElimModel.FK_Area_Auxiliar" FromRole="Area" ToRole="Persona" />
+          <NavigationProperty Name="Cede" Relationship="BDSystemElimModel.FK_Area_Cede" FromRole="Area" ToRole="Cede" />
+          <NavigationProperty Name="LiderArea" Relationship="BDSystemElimModel.FK_Area_Lider" FromRole="Area" ToRole="Persona" />
+        </EntityType>
+        <Association Name="FK_Area_Auxiliar">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Area" Role="Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="auxiliar" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Area_Cede">
+          <End Type="BDSystemElimModel.Cede" Role="Cede" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Area" Role="Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cede">
+              <PropertyRef Name="id_cede" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="cede_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Area_Lider">
+          <End Type="BDSystemElimModel.Persona" Role="Persona" Multiplicity="0..1" />
+          <End Type="BDSystemElimModel.Area" Role="Area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="id_persona" />
+            </Principal>
+            <Dependent Role="Area">
+              <PropertyRef Name="lider" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BDSystemElimModelStoreContainer" CdmEntityContainer="BDSystemElimEntities">
+          <EntitySetMapping Name="Cede">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Cede">
+              <MappingFragment StoreEntitySet="Cede">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="añoInicio" ColumnName="añoInicio" />
+                <ScalarProperty Name="mesInicio" ColumnName="mesInicio" />
+                <ScalarProperty Name="auxiliar" ColumnName="auxiliar" />
+                <ScalarProperty Name="lider" ColumnName="lider" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="id_cede" ColumnName="id_cede" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EscuelaDeVida">
+            <EntityTypeMapping TypeName="BDSystemElimModel.EscuelaDeVida">
+              <MappingFragment StoreEntitySet="EscuelaDeVida">
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="id_escuela" ColumnName="id_escuela" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rol">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Rol">
+              <MappingFragment StoreEntitySet="Rol">
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="BDSystemElimModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="rol_id" ColumnName="rol_id" />
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bautizados">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Bautizados">
+              <MappingFragment StoreEntitySet="Bautizados">
+                <ScalarProperty Name="año" ColumnName="año" />
+                <ScalarProperty Name="lugar" ColumnName="lugar" />
+                <ScalarProperty Name="iglesia" ColumnName="iglesia" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="id_bautizado" ColumnName="id_bautizado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Celula">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Celula">
+              <MappingFragment StoreEntitySet="Celula">
+                <ScalarProperty Name="red_id" ColumnName="red_id" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="cede_id" ColumnName="cede_id" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="añoInicio" ColumnName="añoInicio" />
+                <ScalarProperty Name="mesInicio" ColumnName="mesInicio" />
+                <ScalarProperty Name="dirigido" ColumnName="dirigido" />
+                <ScalarProperty Name="horario" ColumnName="horario" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="auxiliar" ColumnName="auxiliar" />
+                <ScalarProperty Name="lider" ColumnName="lider" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_celula" ColumnName="id_celula" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Red">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Red">
+              <MappingFragment StoreEntitySet="Red">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_red" ColumnName="id_red" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reporte">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Reporte">
+              <MappingFragment StoreEntitySet="Reporte">
+                <ScalarProperty Name="observacion" ColumnName="observacion" />
+                <ScalarProperty Name="miembros_ausent" ColumnName="miembros_ausent" />
+                <ScalarProperty Name="almasganadas" ColumnName="almasganadas" />
+                <ScalarProperty Name="bautizados" ColumnName="bautizados" />
+                <ScalarProperty Name="discipulados" ColumnName="discipulados" />
+                <ScalarProperty Name="total_pres" ColumnName="total_pres" />
+                <ScalarProperty Name="visitantes" ColumnName="visitantes" />
+                <ScalarProperty Name="miembros_pres" ColumnName="miembros_pres" />
+                <ScalarProperty Name="leccion" ColumnName="leccion" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="dia" ColumnName="dia" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+                <ScalarProperty Name="aux" ColumnName="aux" />
+                <ScalarProperty Name="lider" ColumnName="lider" />
+                <ScalarProperty Name="celula_id" ColumnName="celula_id" />
+                <ScalarProperty Name="red_id" ColumnName="red_id" />
+                <ScalarProperty Name="id_reporte" ColumnName="id_reporte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lideres">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Lideres">
+              <MappingFragment StoreEntitySet="Lideres">
+                <ScalarProperty Name="celulalider" ColumnName="celulalider" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="persona_id" ColumnName="persona_id" />
+                <ScalarProperty Name="id_lider" ColumnName="id_lider" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Persona">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Persona">
+              <MappingFragment StoreEntitySet="Persona">
+                <ScalarProperty Name="edad" ColumnName="edad" />
+                <ScalarProperty Name="fechaactual" ColumnName="fechaactual" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="bautizado_id" ColumnName="bautizado_id" />
+                <ScalarProperty Name="escuela_id" ColumnName="escuela_id" />
+                <ScalarProperty Name="lider_id" ColumnName="lider_id" />
+                <ScalarProperty Name="celula_id" ColumnName="celula_id" />
+                <ScalarProperty Name="cede_id" ColumnName="cede_id" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="barrio" ColumnName="barrio" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="profesion" ColumnName="profesion" />
+                <ScalarProperty Name="lugar_nac" ColumnName="lugar_nac" />
+                <ScalarProperty Name="fecha_nac" ColumnName="fecha_nac" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_persona" ColumnName="id_persona" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Area">
+            <EntityTypeMapping TypeName="BDSystemElimModel.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="cede_id" ColumnName="cede_id" />
+                <ScalarProperty Name="auxiliar" ColumnName="auxiliar" />
+                <ScalarProperty Name="lider" ColumnName="lider" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_area" ColumnName="id_area" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
