@@ -7,6 +7,7 @@
 
         Chart1.Titles.Add("Aqui voy a hacer las estadisticas de los datos jeje.")
         saldjaskldalsj
+        estoy en rama
 
 
     End Sub
