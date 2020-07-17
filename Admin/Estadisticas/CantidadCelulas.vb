@@ -5,7 +5,7 @@
 
     Private Sub CantidadCelulas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Chart1.Titles.Add("Aqui voy a hacer las estadisticas de los datos jeje.")
+        Chart1.Titles.Add("Aqui esto en master je.")
 
 
 
