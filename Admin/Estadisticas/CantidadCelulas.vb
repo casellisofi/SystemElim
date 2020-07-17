@@ -5,7 +5,8 @@
 
     Private Sub CantidadCelulas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Chart1.Titles.Add("Duración promedio de llamadas por paises.")
+        Chart1.Titles.Add("Aqui voy a hacer las estadisticas de los datos jeje.")
+
 
 
     End Sub
